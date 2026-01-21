@@ -1,0 +1,171 @@
+Project: Landing page for a product called “The LifeTag”
+
+Goal:
+Create a simple, trustworthy landing page for Pakistan that explains and sells The LifeTag — a QR code sticker placed on motorcycle helmets that helps people access emergency information if the rider is injured.
+
+Context
+
+The LifeTag is a QR-based emergency identity system for bike riders in Pakistan.
+In case of an accident, any bystander can scan the QR code on the helmet and instantly see:
+
+Rider’s name
+
+Blood group
+
+Emergency contact numbers (tap to call)
+
+Basic medical information (allergies / conditions)
+
+No app. No login. No delay.
+
+Target Audience
+
+Motorcycle riders in Pakistan (18–40)
+
+Daily commuters
+
+Delivery riders
+
+People who care about safety but don’t trust complex systems
+
+Tone & Style
+
+Trustworthy
+
+Human
+
+Simple
+
+Safety-focused
+
+Not “techy”
+
+Mix of English + Roman Urdu
+
+Emotion-driven, not feature-heavy
+
+Landing Page Structure
+1. Hero Section
+
+Headline:
+“Agar main behosh ho jaun, mera helmet bole.”
+
+Subheadline:
+The LifeTag is a QR code sticker for your helmet.
+Scan it to instantly contact emergency contacts and see critical medical info.
+
+Primary CTA button:
+“Get The LifeTag”
+
+Secondary CTA:
+“See How It Works”
+
+2. How It Works (3 steps)
+
+Stick The LifeTag QR on your helmet
+
+In case of accident, anyone scans it
+
+Emergency contact & blood group appear instantly
+
+Simple icons, minimal text.
+
+3. Why The LifeTag Exists
+
+Short paragraph explaining:
+
+Accidents happen
+
+Riders often unconscious
+
+Phones are locked
+
+People want to help but don’t know how
+
+Include a strong line:
+
+“Seconds matter. Information saves lives.”
+
+4. What Information Is Shown
+
+Bullet list:
+
+Name
+
+Blood group (highlighted)
+
+Emergency contacts
+
+Critical medical notes
+
+Add reassurance:
+
+Read-only
+
+No CNIC
+
+No address
+
+No tracking
+
+5. Why This Matters in Pakistan
+
+Short section:
+
+High bike usage
+
+Weak emergency systems
+
+People rely on bystanders
+
+This helps ordinary people help faster
+
+6. Call to Action
+
+Headline:
+“Safety is not optional.”
+
+CTA button:
+“Protect Yourself with The LifeTag”
+
+Small text:
+One-time setup. Lifetime peace of mind.
+
+7. Footer
+
+Brand name: The LifeTag
+
+Short line:
+A rider safety initiative
+
+Simple contact placeholder
+
+No social clutter
+
+Design Guidelines
+
+Clean, minimal
+
+White background
+
+Red accents (emergency)
+
+Large readable text
+
+Mobile-first
+
+No stocky startup illustrations
+
+Use helmet + phone + QR visuals
+
+Output Requirements
+
+Generate full landing page copy
+
+Suggest section headings
+
+Suggest CTA wording
+
+Clean layout structure
+
+No backend logic needed
