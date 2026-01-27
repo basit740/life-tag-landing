@@ -23,6 +23,8 @@ function App() {
         <Router />
       </TooltipProvider>
     </QueryClientProvider>
+
+    // <Router />
   );
 }
 

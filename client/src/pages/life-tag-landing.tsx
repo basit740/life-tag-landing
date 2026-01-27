@@ -1,25 +1,25 @@
 import { motion } from "framer-motion";
-import { 
-  Shield, 
-  ScanLine, 
-  Phone, 
-  Heart, 
-  AlertCircle, 
-  CheckCircle2, 
+import {
+  Shield,
+  ScanLine,
+  Phone,
+  Heart,
+  AlertCircle,
+  CheckCircle2,
   Smartphone,
   User,
-  FileText
+  FileText,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import heroImage from "@assets/generated_images/motorcycle_helmet_with_red_qr_code_safety_sticker.png";
+import heroImage from "@/assets/generated_images/motorcycle_helmet_with_red_qr_code_safety_sticker.png";
 
 export default function LifeTagLanding() {
   const fadeIn = {
     initial: { opacity: 0, y: 20 },
     whileInView: { opacity: 1, y: 0 },
     viewport: { once: true },
-    transition: { duration: 0.6 }
+    transition: { duration: 0.6 },
   };
 
   const staggerContainer = {
@@ -27,9 +27,9 @@ export default function LifeTagLanding() {
     show: {
       opacity: 1,
       transition: {
-        staggerChildren: 0.2
-      }
-    }
+        staggerChildren: 0.2,
+      },
+    },
   };
 
   return (
@@ -38,10 +38,19 @@ export default function LifeTagLanding() {
       <nav className="fixed top-0 w-full bg-white/80 backdrop-blur-md z-50 border-b border-border/40">
         <div className="container mx-auto px-4 h-16 flex items-center justify-between">
           <div className="flex items-center gap-2">
-            <Shield className="h-6 w-6 text-primary" fill="currentColor" fillOpacity={0.2} />
-            <span className="font-display font-bold text-xl tracking-tight">The LifeTag</span>
+            <Shield
+              className="h-6 w-6 text-primary"
+              fill="currentColor"
+              fillOpacity={0.2}
+            />
+            <span className="font-display font-bold text-xl tracking-tight">
+              The LifeTag
+            </span>
           </div>
-          <Button size="sm" className="font-semibold bg-primary hover:bg-primary/90 text-white rounded-full px-6 shadow-lg shadow-primary/20">
+          <Button
+            size="sm"
+            className="font-semibold bg-primary hover:bg-primary/90 text-white rounded-full px-6 shadow-lg shadow-primary/20"
+          >
             Get LifeTag
           </Button>
         </div>
@@ -50,7 +59,7 @@ export default function LifeTagLanding() {
       {/* Hero Section */}
       <section className="pt-32 pb-16 md:pt-40 md:pb-24 px-4 overflow-hidden relative">
         <div className="container mx-auto grid md:grid-cols-2 gap-12 items-center">
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, x: -20 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
@@ -60,27 +69,38 @@ export default function LifeTagLanding() {
               <AlertCircle className="w-4 h-4" />
               <span>Safety for every Pakistani rider</span>
             </div>
-            
+
             <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold leading-[1.1] text-balance">
-              <span className="text-primary block mb-2">"Agar main behosh ho jaun,</span> 
+              <span className="text-primary block mb-2">
+                "Agar main behosh ho jaun,
+              </span>
               mera helmet bole."
             </h1>
-            
+
             <p className="text-lg md:text-xl text-muted-foreground leading-relaxed max-w-lg">
-              The LifeTag is a QR code sticker for your helmet. Scan it to instantly contact emergency contacts and see critical medical info.
+              The LifeTag is a QR code sticker for your helmet. Scan it to
+              instantly contact emergency contacts and see critical medical
+              info.
             </p>
-            
+
             <div className="flex flex-col sm:flex-row gap-4 pt-4">
-              <Button size="lg" className="rounded-full text-lg h-14 px-8 bg-primary hover:bg-primary/90 text-white shadow-xl shadow-primary/25 hover:translate-y-[-2px] transition-all">
+              <Button
+                size="lg"
+                className="rounded-full text-lg h-14 px-8 bg-primary hover:bg-primary/90 text-white shadow-xl shadow-primary/25 hover:translate-y-[-2px] transition-all"
+              >
                 Get The LifeTag
               </Button>
-              <Button variant="outline" size="lg" className="rounded-full text-lg h-14 px-8 border-2 hover:bg-secondary/50">
+              <Button
+                variant="outline"
+                size="lg"
+                className="rounded-full text-lg h-14 px-8 border-2 hover:bg-secondary/50"
+              >
                 See How It Works
               </Button>
             </div>
           </motion.div>
-          
-          <motion.div 
+
+          <motion.div
             initial={{ opacity: 0, scale: 0.95 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.8, delay: 0.2 }}
@@ -88,14 +108,14 @@ export default function LifeTagLanding() {
           >
             <div className="absolute inset-0 bg-primary/5 rounded-full blur-3xl transform translate-x-10 translate-y-10" />
             <div className="relative rounded-2xl overflow-hidden shadow-2xl border-4 border-white">
-              <img 
-                src={heroImage} 
-                alt="Motorcycle helmet with LifeTag QR sticker" 
+              <img
+                src={heroImage}
+                alt="Motorcycle helmet with LifeTag QR sticker"
                 className="w-full h-auto object-cover transform hover:scale-105 transition-transform duration-700"
               />
-              
+
               {/* Floating UI Element to show scanning concept */}
-              <motion.div 
+              <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 1, duration: 0.5 }}
@@ -106,10 +126,18 @@ export default function LifeTagLanding() {
                     <Phone className="h-5 w-5" />
                   </div>
                   <div>
-                    <div className="text-xs text-muted-foreground font-medium uppercase tracking-wider">Emergency Contact</div>
-                    <div className="font-bold text-foreground">Bhai (Brother)</div>
+                    <div className="text-xs text-muted-foreground font-medium uppercase tracking-wider">
+                      Emergency Contact
+                    </div>
+                    <div className="font-bold text-foreground">
+                      Bhai (Brother)
+                    </div>
                   </div>
-                  <Button size="icon" variant="ghost" className="ml-auto text-green-600 hover:text-green-700 hover:bg-green-50 rounded-full">
+                  <Button
+                    size="icon"
+                    variant="ghost"
+                    className="ml-auto text-green-600 hover:text-green-700 hover:bg-green-50 rounded-full"
+                  >
                     <Phone className="h-5 w-5 fill-current" />
                   </Button>
                 </div>
@@ -122,7 +150,7 @@ export default function LifeTagLanding() {
       {/* How It Works */}
       <section className="py-20 bg-secondary/30">
         <div className="container mx-auto px-4">
-          <motion.div 
+          <motion.div
             variants={staggerContainer}
             initial="hidden"
             whileInView="show"
@@ -133,31 +161,33 @@ export default function LifeTagLanding() {
               {
                 icon: Shield,
                 title: "Stick The LifeTag",
-                desc: "Place the durable, weather-proof QR sticker on your helmet."
+                desc: "Place the durable, weather-proof QR sticker on your helmet.",
               },
               {
                 icon: ScanLine,
                 title: "Anyone Can Scan",
-                desc: "In an accident, bystanders can scan it with any smartphone camera."
+                desc: "In an accident, bystanders can scan it with any smartphone camera.",
               },
               {
                 icon: Heart,
                 title: "Instant Help",
-                desc: "Your emergency contacts & blood group appear instantly. No app needed."
-              }
+                desc: "Your emergency contacts & blood group appear instantly. No app needed.",
+              },
             ].map((step, i) => (
-              <motion.div 
+              <motion.div
                 key={i}
                 variants={{
                   hidden: { opacity: 0, y: 20 },
-                  show: { opacity: 1, y: 0 }
+                  show: { opacity: 1, y: 0 },
                 }}
                 className="bg-white p-8 rounded-2xl shadow-sm border border-border/50 hover:shadow-md transition-shadow"
               >
                 <div className="h-14 w-14 bg-red-50 rounded-2xl flex items-center justify-center text-primary mb-6">
                   <step.icon className="h-7 w-7" />
                 </div>
-                <h3 className="text-xl font-bold font-display mb-3">{step.title}</h3>
+                <h3 className="text-xl font-bold font-display mb-3">
+                  {step.title}
+                </h3>
                 <p className="text-muted-foreground leading-relaxed">
                   {step.desc}
                 </p>
@@ -171,12 +201,18 @@ export default function LifeTagLanding() {
       <section className="py-24 px-4">
         <div className="container mx-auto max-w-4xl text-center">
           <motion.div {...fadeIn}>
-            <h2 className="font-display text-3xl md:text-4xl font-bold mb-6">Why The LifeTag Exists</h2>
+            <h2 className="font-display text-3xl md:text-4xl font-bold mb-6">
+              Why The LifeTag Exists
+            </h2>
             <p className="text-xl text-muted-foreground leading-relaxed mb-8">
-              Every day, accidents happen where riders fall unconscious. Their phones are locked. 
-              People gather to help but don't know who to call. 
-              <br /><br />
-              <strong className="text-foreground font-semibold">Seconds matter. Information saves lives.</strong>
+              Every day, accidents happen where riders fall unconscious. Their
+              phones are locked. People gather to help but don't know who to
+              call.
+              <br />
+              <br />
+              <strong className="text-foreground font-semibold">
+                Seconds matter. Information saves lives.
+              </strong>
             </p>
           </motion.div>
         </div>
@@ -185,27 +221,49 @@ export default function LifeTagLanding() {
       {/* What Info Display */}
       <section className="py-20 bg-slate-900 text-white overflow-hidden relative">
         {/* Abstract background pattern */}
-        <div className="absolute inset-0 opacity-10" 
-             style={{ backgroundImage: 'radial-gradient(circle at 2px 2px, white 1px, transparent 0)', backgroundSize: '40px 40px' }}>
-        </div>
-        
+        <div
+          className="absolute inset-0 opacity-10"
+          style={{
+            backgroundImage:
+              "radial-gradient(circle at 2px 2px, white 1px, transparent 0)",
+            backgroundSize: "40px 40px",
+          }}
+        ></div>
+
         <div className="container mx-auto px-4 relative z-10">
           <div className="grid md:grid-cols-2 gap-16 items-center">
             <motion.div {...fadeIn}>
-              <h2 className="font-display text-3xl md:text-4xl font-bold mb-8">What bystanders see</h2>
-              
+              <h2 className="font-display text-3xl md:text-4xl font-bold mb-8">
+                What bystanders see
+              </h2>
+
               <ul className="space-y-6">
                 {[
                   { icon: User, text: "Rider's Full Name" },
-                  { icon: Heart, text: "Blood Group (Highlighted)", highlight: true },
+                  {
+                    icon: Heart,
+                    text: "Blood Group (Highlighted)",
+                    highlight: true,
+                  },
                   { icon: Phone, text: "Emergency Contacts (Tap to Call)" },
-                  { icon: FileText, text: "Critical Medical Notes (Allergies)" }
+                  {
+                    icon: FileText,
+                    text: "Critical Medical Notes (Allergies)",
+                  },
                 ].map((item, i) => (
                   <li key={i} className="flex items-center gap-4 text-lg">
-                    <div className={`h-10 w-10 rounded-full flex items-center justify-center ${item.highlight ? 'bg-red-500 text-white' : 'bg-slate-800 text-slate-300'}`}>
+                    <div
+                      className={`h-10 w-10 rounded-full flex items-center justify-center ${item.highlight ? "bg-red-500 text-white" : "bg-slate-800 text-slate-300"}`}
+                    >
                       <item.icon className="h-5 w-5" />
                     </div>
-                    <span className={item.highlight ? 'font-bold text-red-400' : 'text-slate-200'}>
+                    <span
+                      className={
+                        item.highlight
+                          ? "font-bold text-red-400"
+                          : "text-slate-200"
+                      }
+                    >
                       {item.text}
                     </span>
                   </li>
@@ -216,14 +274,19 @@ export default function LifeTagLanding() {
                 <div className="flex gap-4 items-start">
                   <Shield className="h-6 w-6 text-emerald-400 shrink-0 mt-1" />
                   <div>
-                    <h4 className="font-bold text-white mb-1">Privacy Focused</h4>
-                    <p className="text-slate-400 text-sm">Read-only info. No CNIC. No home address. No live tracking. Just what's needed to save your life.</p>
+                    <h4 className="font-bold text-white mb-1">
+                      Privacy Focused
+                    </h4>
+                    <p className="text-slate-400 text-sm">
+                      Read-only info. No CNIC. No home address. No live
+                      tracking. Just what's needed to save your life.
+                    </p>
                   </div>
                 </div>
               </div>
             </motion.div>
 
-            <motion.div 
+            <motion.div
               initial={{ opacity: 0, x: 20 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
@@ -238,12 +301,14 @@ export default function LifeTagLanding() {
                     <div className="w-20 h-20 bg-slate-100 rounded-full mx-auto mb-3 flex items-center justify-center">
                       <User className="h-10 w-10 text-slate-400" />
                     </div>
-                    <h3 className="font-bold text-xl text-slate-900">Ali Khan</h3>
+                    <h3 className="font-bold text-xl text-slate-900">
+                      Ali Khan
+                    </h3>
                     <div className="inline-block bg-red-100 text-red-600 px-3 py-1 rounded-full text-sm font-bold mt-2">
                       Blood Group: O+
                     </div>
                   </div>
-                  
+
                   <div className="space-y-3">
                     <div className="bg-green-50 p-3 rounded-xl flex items-center justify-between border border-green-100">
                       <div className="flex items-center gap-3">
@@ -251,8 +316,12 @@ export default function LifeTagLanding() {
                           <Phone className="h-4 w-4 text-green-600" />
                         </div>
                         <div>
-                          <div className="text-xs text-green-800 font-semibold">FATHER</div>
-                          <div className="text-sm font-bold text-slate-800">0300-1234567</div>
+                          <div className="text-xs text-green-800 font-semibold">
+                            FATHER
+                          </div>
+                          <div className="text-sm font-bold text-slate-800">
+                            0300-1234567
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -262,8 +331,12 @@ export default function LifeTagLanding() {
                           <Phone className="h-4 w-4 text-green-600" />
                         </div>
                         <div>
-                          <div className="text-xs text-green-800 font-semibold">BROTHER</div>
-                          <div className="text-sm font-bold text-slate-800">0321-7654321</div>
+                          <div className="text-xs text-green-800 font-semibold">
+                            BROTHER
+                          </div>
+                          <div className="text-sm font-bold text-slate-800">
+                            0321-7654321
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -284,36 +357,50 @@ export default function LifeTagLanding() {
       <section className="py-24 px-4 bg-white">
         <div className="container mx-auto max-w-5xl">
           <div className="grid md:grid-cols-2 gap-12 items-center">
-             <motion.div {...fadeIn}>
-               <h2 className="font-display text-3xl md:text-4xl font-bold mb-6">Why this matters in Pakistan</h2>
-               <div className="space-y-8">
-                 <div className="flex gap-4">
-                   <div className="h-12 w-12 rounded-xl bg-orange-100 flex items-center justify-center shrink-0">
-                     <Smartphone className="h-6 w-6 text-orange-600" />
-                   </div>
-                   <div>
-                     <h3 className="font-bold text-lg mb-2">Weak Emergency Systems</h3>
-                     <p className="text-muted-foreground">Ambulances can be late. Bystanders are usually the first responders.</p>
-                   </div>
-                 </div>
-                 <div className="flex gap-4">
-                   <div className="h-12 w-12 rounded-xl bg-blue-100 flex items-center justify-center shrink-0">
-                     <CheckCircle2 className="h-6 w-6 text-blue-600" />
-                   </div>
-                   <div>
-                     <h3 className="font-bold text-lg mb-2">Helping People Help You</h3>
-                     <p className="text-muted-foreground">People want to help but don't know who to call. LifeTag gives them the power to act.</p>
-                   </div>
-                 </div>
-               </div>
-             </motion.div>
-             <div className="bg-slate-100 rounded-3xl p-8 md:p-12 text-center">
-                <p className="font-display text-2xl md:text-3xl font-bold text-slate-400 mb-4">
-                  25M+
-                </p>
-                <p className="text-muted-foreground">Motorcycles on the road in Pakistan</p>
-                <div className="w-16 h-1 bg-red-500 mx-auto mt-8 rounded-full"></div>
-             </div>
+            <motion.div {...fadeIn}>
+              <h2 className="font-display text-3xl md:text-4xl font-bold mb-6">
+                Why this matters in Pakistan
+              </h2>
+              <div className="space-y-8">
+                <div className="flex gap-4">
+                  <div className="h-12 w-12 rounded-xl bg-orange-100 flex items-center justify-center shrink-0">
+                    <Smartphone className="h-6 w-6 text-orange-600" />
+                  </div>
+                  <div>
+                    <h3 className="font-bold text-lg mb-2">
+                      Weak Emergency Systems
+                    </h3>
+                    <p className="text-muted-foreground">
+                      Ambulances can be late. Bystanders are usually the first
+                      responders.
+                    </p>
+                  </div>
+                </div>
+                <div className="flex gap-4">
+                  <div className="h-12 w-12 rounded-xl bg-blue-100 flex items-center justify-center shrink-0">
+                    <CheckCircle2 className="h-6 w-6 text-blue-600" />
+                  </div>
+                  <div>
+                    <h3 className="font-bold text-lg mb-2">
+                      Helping People Help You
+                    </h3>
+                    <p className="text-muted-foreground">
+                      People want to help but don't know who to call. LifeTag
+                      gives them the power to act.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </motion.div>
+            <div className="bg-slate-100 rounded-3xl p-8 md:p-12 text-center">
+              <p className="font-display text-2xl md:text-3xl font-bold text-slate-400 mb-4">
+                25M+
+              </p>
+              <p className="text-muted-foreground">
+                Motorcycles on the road in Pakistan
+              </p>
+              <div className="w-16 h-1 bg-red-500 mx-auto mt-8 rounded-full"></div>
+            </div>
           </div>
         </div>
       </section>
@@ -323,13 +410,19 @@ export default function LifeTagLanding() {
         <div className="container mx-auto">
           <div className="bg-primary rounded-[2rem] p-8 md:p-16 text-center text-white shadow-2xl shadow-primary/30 relative overflow-hidden">
             <div className="absolute inset-0 opacity-10 bg-[url('https://www.transparenttextures.com/patterns/carbon-fibre.png')]"></div>
-            
+
             <div className="relative z-10 max-w-2xl mx-auto space-y-8">
-              <h2 className="font-display text-4xl md:text-5xl font-bold">Safety is not optional.</h2>
+              <h2 className="font-display text-4xl md:text-5xl font-bold">
+                Safety is not optional.
+              </h2>
               <p className="text-xl text-white/90">
-                One-time setup. Lifetime peace of mind. Protect yourself and your loved ones today.
+                One-time setup. Lifetime peace of mind. Protect yourself and
+                your loved ones today.
               </p>
-              <Button size="lg" className="h-16 px-10 rounded-full text-xl bg-white text-primary hover:bg-white/90 font-bold shadow-lg">
+              <Button
+                size="lg"
+                className="h-16 px-10 rounded-full text-xl bg-white text-primary hover:bg-white/90 font-bold shadow-lg"
+              >
                 Protect Yourself with The LifeTag
               </Button>
             </div>
@@ -342,9 +435,13 @@ export default function LifeTagLanding() {
         <div className="container mx-auto px-4 text-center">
           <div className="flex items-center justify-center gap-2 mb-6">
             <Shield className="h-6 w-6 text-slate-400" />
-            <span className="font-display font-bold text-xl text-slate-700">The LifeTag</span>
+            <span className="font-display font-bold text-xl text-slate-700">
+              The LifeTag
+            </span>
           </div>
-          <p className="text-muted-foreground mb-8">A rider safety initiative for Pakistan.</p>
+          <p className="text-muted-foreground mb-8">
+            A rider safety initiative for Pakistan.
+          </p>
           <div className="text-sm text-slate-400">
             &copy; {new Date().getFullYear()} The LifeTag. All rights reserved.
           </div>
