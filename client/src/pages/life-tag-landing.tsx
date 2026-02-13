@@ -12,8 +12,9 @@ import {
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import heroImage from "@/assets/generated_images/motorcycle_helmet_with_red_qr_code_safety_sticker.png";
-
+// import heroImage from "@/assets/generated_images/motorcycle_helmet_with_red_qr_code_safety_sticker.png";
+import heroImage from "@/assets/generated_images/full-helmet.jpeg"
+import appLogo from "../../public/appLogo-1.png";
 export default function LifeTagLanding() {
   const fadeIn = {
     initial: { opacity: 0, y: 20 },
@@ -36,16 +37,13 @@ export default function LifeTagLanding() {
     <div className="min-h-screen bg-background font-sans text-foreground overflow-x-hidden">
       {/* Navigation */}
       <nav className="fixed top-0 w-full bg-white/80 backdrop-blur-md z-50 border-b border-border/40">
-        <div className="container mx-auto px-4 h-16 flex items-center justify-between">
+        <div className="container mx-auto px-4 h-22 pt-1 flex items-center justify-between">
           <div className="flex items-center gap-2">
-            <Shield
-              className="h-6 w-6 text-primary"
-              fill="currentColor"
-              fillOpacity={0.2}
-            />
-            <span className="font-display font-bold text-xl tracking-tight">
+           
+            <img alt="TheLifeTag" src={appLogo} className="h-52 w-75"/>
+            {/* <span className="font-display font-bold text-xl tracking-tight">
               The LifeTag
-            </span>
+            </span> */}
           </div>
           <Button
             size="sm"
@@ -115,7 +113,7 @@ export default function LifeTagLanding() {
               />
 
               {/* Floating UI Element to show scanning concept */}
-              <motion.div
+              {/* <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 1, duration: 0.5 }}
@@ -141,7 +139,7 @@ export default function LifeTagLanding() {
                     <Phone className="h-5 w-5 fill-current" />
                   </Button>
                 </div>
-              </motion.div>
+              </motion.div> */}
             </div>
           </motion.div>
         </div>
