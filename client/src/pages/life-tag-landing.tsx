@@ -428,7 +428,7 @@ export default function LifeTagLanding() {
               </p>
               <Button
                 size="lg"
-                className="h-16 px-10 rounded-full text-xl bg-white text-primary hover:bg-white/90 font-bold shadow-lg"
+                className="h-16 px-10 rounded-full text-wrap! text-xl bg-white text-primary hover:bg-white/90 font-bold shadow-lg"
               >
                 Protect Yourself with The LifeTag
               </Button>
