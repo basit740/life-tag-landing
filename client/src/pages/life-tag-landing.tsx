@@ -43,22 +43,23 @@ export default function LifeTagLanding() {
     <div className="min-h-screen bg-background font-sans text-foreground overflow-x-hidden">
       {/* Navigation */}
       <nav className="fixed top-0 w-full bg-white/80 backdrop-blur-md z-50 border-b border-border/40">
-        <div className="container mx-auto h-24 flex items-center justify-between">
+        <div className="container mx-auto h-20 md:h-24 pr-2 md:pr-0 flex items-center justify-between">
           <div className="flex items-center gap-2">
 
-            <img alt="TheLifeTag" src={appLogo} className="h-24 w-63" />
+            <img alt="TheLifeTag" src={appLogo} className="h-20 w-52 md:h-24 md:w-63" />
             {/* <span className="font-display font-bold text-xl tracking-tight">
               The LifeTag
             </span> */}
           </div>
           <Button
             onClick={redirectToWhatsApp}
-            size="lg"
-            className="font-semibold bg-primary hover:bg-primary/90 text-white rounded-full px-6 shadow-lg shadow-primary/20"
+            
+            className="h-10 font-semibold bg-primary hover:bg-primary/90 text-white rounded-full px-6 shadow-lg shadow-primary/20"
           >
             Get LifeTag
           </Button>
         </div>
+        
       </nav>
 
       {/* Hero Section */}
