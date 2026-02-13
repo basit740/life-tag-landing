@@ -14,8 +14,14 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 // import heroImage from "@/assets/generated_images/motorcycle_helmet_with_red_qr_code_safety_sticker.png";
 import heroImage from "@/assets/generated_images/full-helmet.jpeg"
-import appLogo from "../../public/appLogo-1.png";
+import appLogo from "../../public/appLogo-2.png";
 export default function LifeTagLanding() {
+  const whatsappUrl = "https://wa.me/923087310740";
+
+  const redirectToWhatsApp = () => {
+    window.open(whatsappUrl, "_blank", "noopener,noreferrer");
+  };
+
   const fadeIn = {
     initial: { opacity: 0, y: 20 },
     whileInView: { opacity: 1, y: 0 },
@@ -37,16 +43,17 @@ export default function LifeTagLanding() {
     <div className="min-h-screen bg-background font-sans text-foreground overflow-x-hidden">
       {/* Navigation */}
       <nav className="fixed top-0 w-full bg-white/80 backdrop-blur-md z-50 border-b border-border/40">
-        <div className="container mx-auto px-4 h-22 pt-1 flex items-center justify-between">
+        <div className="container mx-auto h-24 flex items-center justify-between">
           <div className="flex items-center gap-2">
-           
-            <img alt="TheLifeTag" src={appLogo} className="h-52 w-75"/>
+
+            <img alt="TheLifeTag" src={appLogo} className="h-24 w-63" />
             {/* <span className="font-display font-bold text-xl tracking-tight">
               The LifeTag
             </span> */}
           </div>
           <Button
-            size="sm"
+            onClick={redirectToWhatsApp}
+            size="lg"
             className="font-semibold bg-primary hover:bg-primary/90 text-white rounded-full px-6 shadow-lg shadow-primary/20"
           >
             Get LifeTag
@@ -85,6 +92,7 @@ export default function LifeTagLanding() {
               <Button
                 size="lg"
                 className="rounded-full text-lg h-14 px-8 bg-primary hover:bg-primary/90 text-white shadow-xl shadow-primary/25 hover:translate-y-[-2px] transition-all"
+                onClick={redirectToWhatsApp}
               >
                 Get The LifeTag
               </Button>
